@@ -1,0 +1,6 @@
+FileVersion = 1
+
+[Project]
+Name = "bgfx-bf"
+TargetType = "BeefLib"
+StartupObject = "bgfx-bf.Program"

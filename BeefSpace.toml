@@ -1,0 +1,5 @@
+FileVersion = 1
+Projects = {bgfx-bf = {Path = "."}}
+
+[Workspace]
+StartupProject = "bgfx-bf"

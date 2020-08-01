@@ -1,5 +1,11 @@
 FileVersion = 1
-Projects = {bgfx-bf = {Path = "."}}
+Projects = {Example = {Path = "Example"}, glfw-beef = "*", Bgfx = {Path = "."}}
 
 [Workspace]
-StartupProject = "bgfx-bf"
+StartupProject = "Example"
+
+[Configs.Test.Win32]
+ConfigSelections = {Example = {Config = "Debug"}}
+
+[Configs.Test.Win64]
+ConfigSelections = {Example = {Config = "Debug"}}

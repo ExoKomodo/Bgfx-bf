@@ -1,6 +1,11 @@
 FileVersion = 1
 
 [Project]
-Name = "bgfx-bf"
+Name = "Bgfx"
 TargetType = "BeefLib"
-StartupObject = "bgfx-bf.Program"
+StartupObject = "Program"
+
+[Configs.Debug.Win64]
+OtherLinkFlags = "$(LinkFlags) /NODEFAULTLIB:libcmtd.lib"
+LibPaths = ["$(ProjectDir)/Libs/x64/bgfx.lib", "$(ProjectDir)/Libs/x64/bx.lib", "$(ProjectDir)/Libs/x64/bimg.lib", "$(ProjectDir)/Libs/x64/bimg_decode.lib", "DelayImp.lib", "gdi32.lib", "psapi.lib", "User32.lib"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/Libs/x64/*.lib\")"]

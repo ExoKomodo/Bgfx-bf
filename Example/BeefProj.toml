@@ -1,5 +1,5 @@
 FileVersion = 1
-Dependencies = {corlib = "*", Bgfx = "*"}
+Dependencies = {corlib = "*", Bgfx = "*", corlib = "*", glfw-beef = "*"}
 
 [Project]
 Name = "Example"

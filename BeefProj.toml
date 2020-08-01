@@ -9,3 +9,13 @@ StartupObject = "Program"
 OtherLinkFlags = "$(LinkFlags) /NODEFAULTLIB:libcmtd.lib"
 LibPaths = ["$(ProjectDir)/dist/x64/bgfx.lib", "$(ProjectDir)/dist/x64/bx.lib", "$(ProjectDir)/dist/x64/bimg.lib", "$(ProjectDir)/dist/x64/bimg_decode.lib", "DelayImp.lib", "gdi32.lib", "psapi.lib", "User32.lib"]
 PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/x64/*.lib\")"]
+
+[Configs.Release.Win64]
+OtherLinkFlags = "$(LinkFlags) /NODEFAULTLIB:libcmtd.lib"
+LibPaths = ["$(ProjectDir)/dist/x64/bgfx.lib", "$(ProjectDir)/dist/x64/bx.lib", "$(ProjectDir)/dist/x64/bimg.lib", "$(ProjectDir)/dist/x64/bimg_decode.lib", "DelayImp.lib", "gdi32.lib", "psapi.lib", "User32.lib"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/x64/*.lib\")"]
+
+[Configs.Test.Win64]
+OtherLinkFlags = "$(LinkFlags) /NODEFAULTLIB:libcmtd.lib"
+LibPaths = ["$(ProjectDir)/dist/x64/bgfx.lib", "$(ProjectDir)/dist/x64/bx.lib", "$(ProjectDir)/dist/x64/bimg.lib", "$(ProjectDir)/dist/x64/bimg_decode.lib", "DelayImp.lib", "gdi32.lib", "psapi.lib", "User32.lib"]
+PostBuildCmds = ["CopyToDependents(\"$(ProjectDir)/dist/x64/*.lib\")"]

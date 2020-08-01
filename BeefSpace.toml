@@ -1,11 +1,12 @@
 FileVersion = 1
-Projects = {Example = {Path = "Example"}, Bgfx = {Path = "."}}
+Projects = {Bgfx = {Path = "."}, Example = {Path = "Example"}, glfw-beef = {Path = "Example/Libs/glfw-beef"}}
+Locked = ["glfw-beef"]
 
 [Workspace]
 StartupProject = "Example"
 
 [Configs.Test.Win32]
-ConfigSelections = {Example = {Config = "Debug"}}
+ConfigSelections = {Bgfx = {Config = "Debug"}}
 
 [Configs.Test.Win64]
-ConfigSelections = {Example = {Config = "Debug"}}
+ConfigSelections = {Bgfx = {Config = "Debug"}}
